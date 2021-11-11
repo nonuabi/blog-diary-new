@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-    http_basic_authenticate_with name: "abhishek", password: "kabi kabi", only: :destroy
+    http_basic_authenticate_with name: "abhishek", password: "kabi kabi", except: [:index, :show]
+
 
     
     def index
