@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #898989;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: 400;
+}
+
+.post_container {
+  margin-top: 100px;
+}
+
+.entry-meta::before {
+  width: 60px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #f63c4e;
+  margin-right: 10px;
+  opacity: 0.4;
+}
+
+.byline {
+  display: inline-block;
+  color: rgb(246, 60, 79);
+}
+
+.entry-title {
+  margin: 15px 0 45px;
+  line-height: 1.25;
+  font-size: 28px;
+  clear: both;
+  font-weight: 400;
+  font-family: "Droid Serif", serif;
+  color: #333;
+}
+
+.entry-content {
+  border-bottom: 1px solid #efefef;
+}
+.comment_create {
+  margin: 10px 0 10px;
+}
+.input-section {
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 32%;
+  padding: 10px 25px;
+  background: transparent;
+  columns: #666;
+  border: none;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: 400;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #ff516b;
+}
+
+.comment_list {
+  padding: 25px 0;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.guest-description {
+  padding-left: 20px;
+  margin-top: -26px;
+}

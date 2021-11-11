@@ -1,0 +1,35 @@
+<div class="index-main">
+<section class="article-section">
+            <header class="entry_header">
+                <div class="entry-section">
+                    <div class="entry-meta">
+                        <span class="byline">by PlanetSpark</span>
+                    </div>
+                    <div class="action-section">
+                        <div class="link-container">
+                            <%= link_to edit_article_path(@article) do %>
+                                <i class="fas fa-pencil-alt"></i>
+                            <% end %>
+                            <%= link_to article_path(@article), method: :delete, data: {confirm: 'Are you sure?'} do %>
+                                <i class="fas fa-trash"></i>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="entry-title">
+                    <%= @article.title%>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <p>
+                    <%= @article.text%>
+                </p>
+            </div>
+            <div class='view_comments-section'>
+               <%= render 'comments/comment' %>
+            <div>
+            <div class="comment_create">
+               <%= render 'comments/form' %>
+            </div>
+    </section>       
+</div>
